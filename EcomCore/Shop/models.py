@@ -18,7 +18,7 @@ class Product(models.Model):
     price = models.DecimalField(max_digits=10, decimal_places=2)
     room = models.ForeignKey(Room, related_name="products", on_delete=models.SET_NULL, null=True)
     concept = models.ForeignKey(Concept, related_name="products", on_delete=models.SET_NULL, null=True)
-    image = models.URLField(upload_to='products/')
+    image = models.URLField()
     
     def __str__(self):
         return self.name
