@@ -1,0 +1,9 @@
+# Ignore the settings file
+settings.py
+
+# Ignore other sensitive files or folders if needed
+*.pyc
+__pycache__/
+db.sqlite3
+.env
+EcomCore/EcomCore/settings.py
